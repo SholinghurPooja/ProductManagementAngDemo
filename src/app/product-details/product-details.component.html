@@ -1,11 +1,13 @@
 
 <!--Card 1-->
 <div class="card shadow h-100" style="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3s-ygrSUGjha3wNKKQpepTt22hxzpJDSVqg&usqp=CAU" class="card-img-top" alt="...">
+    <img src="{{prodObj.prodImg}}" class="card-img-top" alt="Not available" width=100% height=40%>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">{{prodObj.prodTitle}}</h5>
+      <p class="card-text" style="font-size:12px;">{{prodObj.prodDesc}}</p>
+      <div style="display:flex; flex-direction:row; align-content:flex-end;">
+      <button href="#" class="btn btn-primary" style="bottom:-10px;" (click)="sendProductToParent(prodObj.prodTitle)">Add Product</button>
+    </div>
     </div>
   </div>
 
