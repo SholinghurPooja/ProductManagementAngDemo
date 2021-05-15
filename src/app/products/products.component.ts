@@ -8,7 +8,7 @@ import { Product } from '../models/product.model';
 })
 export class ProductsComponent {
 
-products:Product[]=[
+/*products:Product[]=[
   {
   prodTitle:"Apple Watch Blue Aluminium Case with Sport Band",
   prodImg:'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MYAU2_VW_34FR+watch-40-alum-blue-cell-6s_VW_34FR_WF_CO_GEO_IN?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1599010468000,1601920119000',
@@ -50,7 +50,7 @@ products:Product[]=[
     prodDesc:"The top-of-the-hour Townsman automatic takes its cues from vintage designs.A refined black case houses an amber crystal lens and a see-through skeleton dial. The automatic movement features a built-in rotor that’s powered by the motion of your wrist - no battery required."
   }
 ];
-
+*/
 
 
 

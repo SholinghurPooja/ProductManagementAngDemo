@@ -1,8 +1,10 @@
+<!--
 <p class="text-light text-center" style="font-weight: bold;" >No. of Items Selected:{{prodCount}}</p>
 <h5 class="text-white  text-center">Products Selected By User:</h5>
 <p *ngIf="productsSentByChild.length==0" class="text-white  text-center" style="font-weight: bold;">No Products Selected!</p>
 <p *ngFor="let title of productsSentByChild" style="font-weight: bold;" class="text-white  text-center">{{title}},</p>
-
+-->
+<!--
 <div class="row">
 <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4 mt-5 mb-5">
    <div class="col" *ngFor="let p of products">
@@ -10,3 +12,24 @@
     </div>
 </div>
 </div>
+-->
+
+<!--Nested routing-->
+
+<!--Pills effect-->
+<ul class="nav nav-pills justify-content-evenly">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="living" routerLinkActive="active">Living</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="bedroom" routerLinkActive="active">Bedroom</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="decor" routerLinkActive="active">Decor</a>
+    </li>
+    
+  </ul>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>

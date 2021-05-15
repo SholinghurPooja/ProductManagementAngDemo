@@ -1,0 +1,22 @@
+.w-100{
+    width:90%;
+    height:75vh;
+    
+}
+
+h1 {
+    font-size: 72px;
+    font-family: 'Lobster', cursive;
+    background: -webkit-linear-gradient(black, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top:20px;
+  }
+  h3,h5{
+    font-family: 'Lobster', cursive;
+    color:tomato;
+  }
+ 
+  .fc img{
+    margin: 4px ;
+  }

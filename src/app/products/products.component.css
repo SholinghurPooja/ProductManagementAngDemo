@@ -1,0 +1,14 @@
+.nav-pills>li>a{
+    background-color: coral;
+   
+   /* background:linear-gradient(to right,coral, orangered,black);*/
+    border-radius:20px;
+    color:white;
+    font-weight: bold;
+   
+} 
+
+
+.nav-pills>li>a.active{
+    background-color: black;
+}

@@ -10,17 +10,25 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { LivingComponent } from './living/living.component';
+import { BedroomComponent } from './bedroom/bedroom.component';
+import { DecorComponent } from './decor/decor.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     FooterComponent,
-    ProductDetailsComponent,
+     ProductDetailsComponent,
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    ContactusComponent
+    ContactusComponent,
+    LivingComponent,
+    BedroomComponent,
+    DecorComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
