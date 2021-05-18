@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Product} from '../models/product.model';
+import {DataService} from '../data.service';
 @Component({
   selector: 'app-living',
   templateUrl: './living.component.html',
   styleUrls: ['./living.component.css']
 })
-export class LivingComponent  {
-
+export class LivingComponent implements OnInit {
+/*
 living:Product[]=[
   {
     prodTitle:"Amelia 2 Seater Sofa in Charcoal Grey Colour",
@@ -72,5 +73,17 @@ living:Product[]=[
   }
 
 ]
+*/
 
+//accessing data present in service
+
+//inject data service object
+constructor(private dsObj:DataService){
+
+}
+living:Product[]=[];
+ngOnInit(){
+  //object initialization logic
+this.living=this.dsObj.getLivingData();
+}
 }

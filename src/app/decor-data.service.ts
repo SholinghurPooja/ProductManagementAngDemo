@@ -1,22 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import { DecorDataService } from '../decor-data.service';
-import { Product } from '../models/product.model';
+import { Injectable } from '@angular/core';
+import { Product } from './models/product.model';
 
-@Component({
-  selector: 'app-decor',
-  templateUrl: './decor.component.html',
-  styleUrls: ['./decor.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class DecorComponent implements OnInit {
+export class DecorDataService {
 
-  constructor(private dcObj:DecorDataService) { }
-decor:Product[]=[];
+  constructor() { }
+  
 
-  ngOnInit(){
-this.decor=this.dcObj.getDecorData();
-  }
-  /*decor:Product[]=[
+  //DECOR
+  decor:Product[]=[
     {
       prodTitle:"Red Wrought Iron Decorative Wall Clock",
       prodImg:"https://ii1.pepperfry.com/media/catalog/product/r/e/568x625/red-wrought-iron-snowy-bike-with-watch-wall-art-by-decocraft-red-wrought-iron-snowy-bike-with-watch--hqvgkq.jpg",
@@ -73,8 +67,8 @@ this.decor=this.dcObj.getDecorData();
       prodMaterial:"Material: Wrought Iron",
       prodPrice:5459
     }
-    
-  
-
-  ];*/
+  ];
+  getDecorData():Product[]{
+    return this.decor;
+  }
 }

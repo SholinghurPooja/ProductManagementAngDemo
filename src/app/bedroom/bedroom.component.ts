@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BedroomDataService } from '../bedroom-data.service';
+import { DataService } from '../data.service';
 import { Product } from '../models/product.model';
 
 @Component({
@@ -8,11 +10,12 @@ import { Product } from '../models/product.model';
 })
 export class BedroomComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private bdObj:BedroomDataService) { }
+bedroom:Product[]=[];
+  ngOnInit(){
+    this.bedroom=this.bdObj.getBedroomData();
   }
-
+/*
   bedroom:Product[]=[
     {
       prodTitle:"Bergen Solid Wood King Size Bed With Storage ",
@@ -71,5 +74,6 @@ export class BedroomComponent implements OnInit {
       prodPrice:18990
     }
   ];
+  */
 
 }
