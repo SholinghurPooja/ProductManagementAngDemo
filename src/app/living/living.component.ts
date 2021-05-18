@@ -88,7 +88,7 @@ ngOnInit(){
 this.dsObj.getLivingData().subscribe(
   data=>{
     this.living=data; 
-  },
+  }, 
   err=>{
     console.log("error is",err);
   }
