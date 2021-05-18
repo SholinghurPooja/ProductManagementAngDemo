@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Product } from './models/product.model';
-
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  //injecting HttpClient service object
+  constructor(private hc:HttpClient) { }
 
-  constructor() { }
-
-  private living:Product[]=[
+  /*private living:Product[]=[
     {
       prodTitle:"Amelia 2 Seater Sofa in Charcoal Grey Colour",
       prodImg:"https://ii1.pepperfry.com/media/catalog/product/a/m/568x284/amelia-2-seater-sofa-in-charcoal-grey-colour-by-casacraft-amelia-2-seater-sofa-in-charcoal-grey-colo-mc0vev.jpg",
@@ -74,11 +75,18 @@ export class DataService {
   
   ];
 
+
   //to access the above pvt data we declare a method
   getLivingData():Product[]{
     return this.living;
   }
+*/
 
+//now the data is not existed in this file,so now we have to make a http request to the file of the assets folder to get the data
+getLivingData():Observable<Product[]>{
+  //http get req
+  return this.hc.get<Product[]>("assets/living.json");
+}
 
 
 }

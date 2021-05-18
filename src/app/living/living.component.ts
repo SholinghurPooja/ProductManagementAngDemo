@@ -84,6 +84,14 @@ constructor(private dsObj:DataService){
 living:Product[]=[];
 ngOnInit(){
   //object initialization logic
-this.living=this.dsObj.getLivingData();
+//this.living=this.dsObj.getLivingData();
+this.dsObj.getLivingData().subscribe(
+  data=>{
+    this.living=data; 
+  },
+  err=>{
+    console.log("error is",err);
+  }
+)
 }
 }
