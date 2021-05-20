@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BedroomComponent } from './bedroom/bedroom.component';
+import { ColorsComponent } from './colors/colors.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DecorComponent } from './decor/decor.component';
 import { HomeComponent } from './home/home.component';
@@ -9,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
+import { TestComponent } from './test/test.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -22,6 +25,9 @@ const routes: Routes = [
     {path:'',redirectTo:'/products/living',pathMatch:'full'} //to show living component when we click products tab
   ]},
   {path:'',component:HomeComponent},
+  {path:'test',component:TestComponent}, 
+  {path:'colors',component:ColorsComponent},
+  {path:'users',component:UsersComponent},
   {path:'**',component:PagenotfoundComponent}//wild card route,it must be placed in the last of the routes array bec ** can match with any string
   //{path:'',redirectTo:'/login',pathMatch:'full'}//we are trying to redirect to login page because our home page is empty
 ];

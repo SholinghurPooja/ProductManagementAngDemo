@@ -14,6 +14,9 @@ import { LivingComponent } from './living/living.component';
 import { BedroomComponent } from './bedroom/bedroom.component';
 import { DecorComponent } from './decor/decor.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { TestComponent } from './test/test.component';
+import { ColorsComponent } from './colors/colors.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     LivingComponent,
     BedroomComponent,
     DecorComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    TestComponent,
+    ColorsComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

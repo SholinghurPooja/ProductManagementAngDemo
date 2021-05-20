@@ -1,0 +1,16 @@
+<table class="table text-center p-3 m-4" style="background-color: cornsilk; font-family: 'Lobster', cursive;">
+    <thead>
+        <tr>
+            <th><h1>ID</h1></th>
+            <th><h1>Name</h1></th>
+            <th><h1>Color</h1></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let colorObj of colorsInfo.data" >
+            <td style="font-size:30px;">{{colorObj.id}}</td>
+            <td style="font-size:30px;">{{colorObj.name}}</td>
+            <td style="background-color: {{colorObj.color}};"></td>
+        </tr>
+    </tbody>
+</table>
